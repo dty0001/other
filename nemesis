@@ -1,0 +1,76 @@
+script_key="KeyHere";
+local Nemesis = {
+    BulletAssist = {
+        Enabled = true,
+        UsePrediction = true,
+        Prediction = 0.135,
+        Visualization = true,
+        ClosestPart = true,
+        ClosestPartType = "Nearest Part",
+        UseGunFOV = false,
+        ResolverCalculation = "Nemesis",
+        Resolver = false,
+        HitChance = 100,
+        Selected = nil,
+        SelectedPart = nil,
+        TargetPart = {"Head", "HumanoidRootPart"},
+    },
+    FOVSettings = {
+        Visible = true,
+        Filled = false,
+        FOV = 40,
+        Sides = 300,
+        Color = Color3.fromRGB(0, 0, 139),
+        Thickness = 2,
+        Transparency = 1,
+    },
+    AimAssist = {
+        Enabled = true,
+        Prediction = 0.135,
+        Target_Bind = Enum.KeyCode.Q,
+        UniversalTargetBind = Enum.KeyCode.X,
+        HitPart = "Nearest",
+        Smoothing = {
+            X_Axis = {
+                SmoothingAmount = 0.020,m
+            },
+            Y_Axis = {
+                SmoothingAmount = 0.020,
+            },
+        },
+    },
+    LagSpike = {
+        Enabled = true,
+        Keybind = Enum.KeyCode.Z,
+        RepeatedLag = 1,
+    },
+}
+    getgenv().GunSettings = {
+        ["Double-Barrel SG"] = { -- Da Hood
+            ["FOV"] = 30,
+    },
+        ["Double Barrel SG"] = { -- DHM
+            ["FOV"] = 30,
+    },
+        ["DoubleBarrel"] = { -- Hood Customs
+            ["FOV"] = 30,
+    },
+        ["Revolver"] = {
+            ["FOV"] = 20,
+    },
+        ["SMG"] = {
+            ["FOV"] = 30,
+    },
+        ["Shotgun"] = {
+            ["FOV"] = 30,
+    },
+        ["TacticalShotgun"] = {
+            ["FOV"] = 30,
+    },
+}
+    getgenv().Memory = {
+        Start = 780,
+        End = 1020,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3296ce6269f1de9f2133bd11df4918ac.lua"))()
