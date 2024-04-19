@@ -6,12 +6,12 @@ getgenv().Cloud = {
     ['Universal'] = {
         ['Resolver'] = {
             ['Enabled'] = true, 
-            ['Always On'] = true
+            ['Always On'] = true,
         },
         ['Offset'] = {
             ['Enabled'] = true, 
             ['X'] = 0, 
-            ['Y'] = 0
+            ['Y'] = 0,
         },
         ['Memory'] = {
             ['Enabled'] = true, 
