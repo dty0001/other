@@ -28,11 +28,11 @@ getgenv().Cloud = {
         ['Mode'] = "Target", --[[ FOV / Target ]]--
         ['Key'] = "C", 
         ['Notify'] = false, 
-        ['Sticky'] = false, --[[ Makes it so FOV follows your target. ]]--
+        ['Sticky'] = true, --[[ Makes it so FOV follows your target. ]]--
 
         ['Prediction'] = true, 
-        ['Prediction Horizontal'] = 0.135,
-        ['Prediction Vertical'] = 0.135,
+        ['Prediction Horizontal'] = 0.127,
+        ['Prediction Vertical'] = 0.127,
         ['Hit Chance'] = 100,
         ['Air Hit Chance'] = 100,
 
@@ -54,14 +54,14 @@ getgenv().Cloud = {
     ['Assist'] = {
         ['Enabled'] = true,
         ['Key'] = "Q",
-        ['Sticky'] = false, --[[ Makes it so FOV follows your target. ]]--
+        ['Sticky'] = true, --[[ Makes it so FOV follows your target. ]]--
 
         ['Smoothing'] = 0.22,
         ['InAir Smoothing'] = 0.22,
 
         ['Prediction'] = true, 
-        ['Prediction Horizontal'] = 0.135,
-        ['Prediction Vertical'] = 0.135,
+        ['Prediction Horizontal'] = 0.127,
+        ['Prediction Vertical'] = 0.127,
 
         ['HitParts'] = {"Head", "Torso", "Arms", "Legs"}, --[[ Head, Torso, Arms, Legs ]]--
         ['HitPartType'] = "Nearest Point", --[[ "Nearest Part", "Nearest Point", "Default" ]]--
@@ -109,7 +109,7 @@ getgenv().Cloud = {
             ['Friend'] = false,
             ['Alive'] = true, 
             ['Team'] = false,
-            ['Crew'] = true,
+            ['Crew'] = false,
         },
         ['Silent'] = {
             ['Wall'] = true, 
@@ -119,7 +119,7 @@ getgenv().Cloud = {
             ['Friend'] = false,
             ['Alive'] = true, 
             ['Team'] = false,
-            ['Crew'] = true,
+            ['Crew'] = false,
         },
         ['Assist'] = {
             ['Wall'] = true, 
@@ -132,7 +132,7 @@ getgenv().Cloud = {
             ['Alive'] = true, 
             ['Tool'] = true,
             ['Team'] = false,
-            ['Crew'] = true,
+            ['Crew'] = false,
         },
     },
     ['FOV Settings'] = {
