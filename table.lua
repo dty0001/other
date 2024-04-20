@@ -1,6 +1,6 @@
 getgenv().Cloud = {
     ['Load'] = {
-        ['Key'] = "Key",
+        ['Key'] = "KeyHere",
         ['Intro'] = true,
     },
     ['Universal'] = {
@@ -28,11 +28,11 @@ getgenv().Cloud = {
         ['Mode'] = "Target", --[[ FOV / Target ]]--
         ['Key'] = "C", 
         ['Notify'] = false, 
-        ['Sticky'] = true, --[[ Makes it so FOV follows your target. ]]--
+        ['Sticky'] = false, --[[ Makes it so FOV follows your target. ]]--
 
         ['Prediction'] = true, 
-        ['Prediction Horizontal'] = 0.127,
-        ['Prediction Vertical'] = 0.127,
+        ['Prediction Horizontal'] = 0.135,
+        ['Prediction Vertical'] = 0.135,
         ['Hit Chance'] = 100,
         ['Air Hit Chance'] = 100,
 
@@ -43,25 +43,25 @@ getgenv().Cloud = {
 
         ['Dot'] = {
             ['Enabled'] = true, 
-            ['Color'] = Color3.fromRGB(77,219,255)
+            ['Color'] = Color3.fromRGB(77,219,255),
         },
         ['Tracer'] = {
             ['Enabled'] = true, 
             ['Thickness'] = 0.75, 
-            ['Color'] = Color3.fromRGB(77,219,255)
+            ['Color'] = Color3.fromRGB(77,219,255),
         },
     },
     ['Assist'] = {
         ['Enabled'] = true,
         ['Key'] = "Q",
-        ['Sticky'] = true, --[[ Makes it so FOV follows your target. ]]--
+        ['Sticky'] = false, --[[ Makes it so FOV follows your target. ]]--
 
         ['Smoothing'] = 0.22,
         ['InAir Smoothing'] = 0.22,
 
         ['Prediction'] = true, 
-        ['Prediction Horizontal'] = 0.127,
-        ['Prediction Vertical'] = 0.127,
+        ['Prediction Horizontal'] = 0.135,
+        ['Prediction Vertical'] = 0.135,
 
         ['HitParts'] = {"Head", "Torso", "Arms", "Legs"}, --[[ Head, Torso, Arms, Legs ]]--
         ['HitPartType'] = "Nearest Point", --[[ "Nearest Part", "Nearest Point", "Default" ]]--
@@ -125,12 +125,12 @@ getgenv().Cloud = {
             ['Wall'] = true, 
             ['Visible'] = true,
             ['Forcefield'] = false, 
-            ['Reloading'] = true,
+            ['Reloading'] = false,
             ['Knocked'] = true,
             ['Typing'] = true,
             ['Friend'] = false,
             ['Alive'] = true, 
-            ['Tool'] = true,
+            ['Tool'] = false,
             ['Team'] = false,
             ['Crew'] = false,
         },
@@ -140,24 +140,24 @@ getgenv().Cloud = {
             ['Enabled'] = false,
             ['Close Range'] = 20, 
             ['Medium Range'] = 40,
-            ['Far Range'] = 80,
-            ['Close FOV'] = 30,
-            ["Medium FOV"] = 20,
-            ['Far FOV'] = 10,
+            ['Far Range'] = 60,
+            ['Close FOV'] = 28,
+            ["Medium FOV"] = 22,
+            ['Far FOV'] = 16,
         },
 
         ['Silent'] = {
             ['Visible'] = true,
             ['Filled'] = true,
             ['Color'] = Color3.fromRGB(77,219,255),
-            ['Radius'] = 100,
+            ['Radius'] = 32,
         },
 
         ['Assist'] = {
             ['Visible'] = false,
             ['Filled'] = false,
             ['Color'] = Color3.fromRGB(77,219,255),
-            ['Radius'] = 50,
+            ['Radius'] = 80,
         },
     },
     ['FakeSpike'] = {
